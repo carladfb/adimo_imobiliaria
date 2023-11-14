@@ -5,6 +5,7 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+/*------------ Página Inicial ------------*/
 /*Navbar*/
 .navebar-container {
     display: flex;
@@ -16,7 +17,6 @@ body {
 .navebar {
     background-color: #79A89F;
     overflow: hidden;
-
 }
 
 .navbar-logo {
@@ -51,4 +51,312 @@ body {
 
 .navbar-link a:hover {
     color: #306B60;
+}
+
+/*Banner*/
+#banner {
+    /*padding: 2rem 5rem;*/
+    background-color: #79A89F;
+}
+
+.banner-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.textos-banner {
+    padding: 5rem 5rem;
+    width: 40%;
+}
+
+.frase-efeito {
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.1375rem;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.banner-container p {
+    font-size: 1.3rem;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+    margin-bottom: 4rem;
+}
+
+.banner-container a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    background-color: #306B60;
+    border: 5px solid #306B60;
+    border-radius: 0.9375rem;
+    padding: 0.7rem;
+    transition: 0.2s;
+}
+
+.banner-container a:hover {
+    background-color: #79A89F;
+    color: #306B60;
+    border: 5px solid #306B60;
+    font-weight: 500;
+}
+
+/*Sobre da Página inicial*/
+.sobre-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid #D0D0D0;
+}
+
+.adimo-titulo {
+    font-size: 1.625rem;
+    font-weight: 400;
+    letter-spacing: 0.40625rem;
+    text-align: center;
+    border: 1px solid #D0D0D0;
+    padding: 2rem;
+}
+
+.titulo-sobre {
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.linha {
+    border-top: 1px solid #D0D0D0;
+    width: 48rem;
+}
+
+.sobre-container p {
+    font-size: 1.375rem;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 3rem;
+    padding: 0 20rem;
+    line-height: 1.5;
+}
+
+.sobre-container a {
+    color: white;
+    background-color: #306B60;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 1rem;
+    border-radius: 0.9375rem;
+    margin-top: 3rem;
+    border: 5px solid #306B60;
+    transition: 0.2s;
+}
+
+.sobre-container a:hover {
+    background-color: white;
+    color: #306B60;
+    border: 5px solid #306B60;
+    font-weight: 500;
+}
+
+/*Recém lançados*/
+#recem-lancados {
+    padding: 2rem 5rem;
+}
+
+.lancados-container-1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lancados-container-2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.lancados-titulo {
+    font-size: 1.625rem;
+    font-weight: 400;
+    letter-spacing: 0.1625rem;
+}
+
+.card {
+    margin: 2rem 0;
+}
+
+.titulo-card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-title {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.card-text {
+    color: #7A7A7A;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.btn {
+    margin-top: 1rem;
+    background-color: #306B60;
+    border: 3px solid #306B60;
+    border-radius: 0.9375rem;
+    font-weight: 500;
+}
+
+.btn:hover {
+    background-color: white;
+    color: #306B60;
+    border: 3px solid #306B60;
+    font-weight: 500;
+}
+
+/*Footer*/
+.footer-container {
+    background-color: #79A89F;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 5rem;
+    align-items: center;
+}
+
+.footer-container a {
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 0.8rem;
+    transition: 0.2s;
+}
+
+/*-------- Imóveis --------*/
+#imoveis-lancados {
+    padding: 2rem 5rem;
+}
+
+.imoveis {
+    display: flex;
+    justify-content: space-between;
+}
+
+.imoveis-titulo {
+    font-size: 1.625rem;
+    font-weight: 400;
+    letter-spacing: 0.1625rem;
+    text-align: center;
+}
+
+.imoveis-container-1,
+.imoveis-container-2,
+.imoveis-container-3,
+.imoveis-container-4,
+.imoveis-container-5 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.imoveis-container-1.row,
+.imoveis-container-2.row,
+.imoveis-container-3.row,
+.imoveis-container-4.row,
+.imoveis-container-5.row {
+    margin: 0 6.50rem;
+
+}
+
+
+
+.card {
+    width: 100%;
+    margin-bottom: 0.938rem;
+}
+
+/*-------------- Sobre ----------------*/
+#sobre {
+    padding: 2rem 15rem;
+}
+
+.sobre-titulo {
+    text-align: center;
+    font-size: 1.625rem;
+    font-weight: 400;
+    letter-spacing: 0.1625rem;
+}
+
+#sobre p {
+    text-align: center;
+    font-size: 1.375rem;
+    font-weight: 300;
+    padding: 1rem 5rem;
+}
+
+.missao,
+.visao,
+.historia {
+    margin-top: 1rem;
+    display: flex;
+}
+
+/*--------------- Lista de desejos ---------------*/
+#lista-desejos {
+    padding: 2rem 5rem;
+}
+
+.desejos-titulo {
+    font-size: 1.625rem;
+    font-weight: 400;
+    letter-spacing: 0.1625rem;
+    text-align: center;
+}
+
+.desejos-container-1,
+.desejos-container-2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*------------ Login --------------*/
+#login {
+    padding: 8rem 35rem;
+}
+
+.formulario-login {
+    border: 5px solid #306B60;
+    border-radius: 1.25rem;
+    padding: 2rem;
+}
+
+.login-titulo {
+    font-size: 1.625rem;
+    font-weight: 400;
+    letter-spacing: 0.1625rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.form-group label{
+    color:#306B60;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.form-control {
+    margin-bottom: 1rem;
+    height: 3rem;
+}
+
+.botoes-login{
+    text-align: center;
+    justify-content: space-between;
 }
