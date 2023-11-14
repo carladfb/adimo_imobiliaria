@@ -11,4 +11,4 @@ O projeto acadêmico "Imobiliária Adimo" foi desenvolvido para a obtenção de 
 
 ## Licença
 
-Este projeto está sob a licença MIT) - veja o arquivo [LICENSE.md](https://github.com/carladfb/adimo_imobiliaria/blob/main/LICENSE) para detalhes.
+Este projeto está sob a licença MIT - veja o arquivo [LICENSE.md](https://github.com/carladfb/adimo_imobiliaria/blob/main/LICENSE) para detalhes.
