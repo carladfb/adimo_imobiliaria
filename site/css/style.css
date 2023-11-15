@@ -499,6 +499,7 @@ button:hover {
 
 .imovel-container {
     display: flex;
+    align-items: center;
 }
 
 .dados-imovel {
