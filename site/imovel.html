@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html lang="en">
 <html lang="pt-br">
 
 <head>
@@ -10,7 +9,7 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Login</title>
+    <title>Imóvel</title>
 </head>
 
 <body>
@@ -30,20 +29,21 @@
     </header>
 
     <main>
-        <!--Login-->
-        <section id="login">
-            <div class="login-container">
-                <form class="login-form" action="#" method="post">
-                    <h2>Login</h2>
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email" name="email" placeholder="Digite seu email..." required>
-                    <label for="password">Senha:</label>
-                    <input type="password" id="password" name="password" placeholder="Digite sua senha..." required>
-                    <div class="botoes-login">
-                        <a href="carrinho.html"><button type="button">Entrar como Cliente</button></a>
-                        <a href="atendente.html"><button type="button">Entrar como Atendente</button></a>
-                    </div>
-                </form>
+        <section id="imovel">
+            <div class="imovel-container">
+                <div class="imovel-image">
+                    <img src="image/predio1 7.png" alt="imovel">
+                </div>
+                <div class="dados-imovel">
+                    <h2 class="titulo-apartamento">Apartamento - Silent Hills</h2>
+                    <p><img src="image/Ruler.png" alt="Regua">Área - 57x70²</p>
+                    <p><img src="image/bed.png" alt="Cama">Dormitórios - 2</p>
+                    <p><img src="image/Apartment.png" alt="Apartamento">Estágio - em andamento</p>
+                    <h2 class="descricao-titulo">Descrição</h2>
+                    <p>Aosdiaoijsfoaimsfpomaf oasikfpasdf kpfaofkpaf pasokfpaofkspasmfa apfokmapsmfas aofkapmofsdopm
+                        vopskfpaofdmsapsv aomfapsfmopasf aoamfpamsk</p>
+                    <a href="#" class="btn btn-primary btn-interesse">Tenho interesse</a>
+                </div>
             </div>
         </section>
     </main>
@@ -64,6 +64,15 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var btnInteresse = document.querySelector('.btn-interesse');
+
+            btnInteresse.addEventListener('click', function () {
+                alert('Adicionado à lista de desejos com sucesso! Se deseja visualizar faça login. ');
+            });
+        });
+    </script>
 </body>
 
 </html>

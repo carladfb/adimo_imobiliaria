@@ -40,7 +40,7 @@ body {
 }
 
 .navbar-link a {
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 500;
     letter-spacing: 0.1rem;
     text-decoration: none;
@@ -66,7 +66,7 @@ body {
 
 .textos-banner {
     padding: 5rem 5rem;
-    width: 40%;
+    width: 50%;
 }
 
 .frase-efeito {
@@ -111,7 +111,7 @@ body {
     align-items: center;
     justify-content: center;
     padding-bottom: 2rem;
-    border-bottom: 2px solid #D0D0D0;
+    border-bottom: 1.5px solid #D0D0D0;
 }
 
 .adimo-titulo {
@@ -131,15 +131,15 @@ body {
 
 .linha {
     border-top: 1px solid #D0D0D0;
-    width: 48rem;
+    width: 34rem;
 }
 
 .sobre-container p {
-    font-size: 1.375rem;
+    font-size: 1.2rem;
     font-weight: 300;
     text-align: center;
     margin-top: 3rem;
-    padding: 0 20rem;
+    padding: 0 15rem;
     line-height: 1.5;
 }
 
@@ -187,7 +187,7 @@ body {
 }
 
 .card {
-    margin: 2rem 0;
+    margin: 2rem 1rem 0 0;
 }
 
 .titulo-card {
@@ -254,6 +254,8 @@ body {
     font-weight: 400;
     letter-spacing: 0.1625rem;
     text-align: center;
+    width: 100%;
+    margin-bottom: 1rem;
 }
 
 .imoveis-container-1,
@@ -265,25 +267,9 @@ body {
     justify-content: space-between;
 }
 
-.imoveis-container-1.row,
-.imoveis-container-2.row,
-.imoveis-container-3.row,
-.imoveis-container-4.row,
-.imoveis-container-5.row {
-    margin: 0 6.50rem;
-
-}
-
-
-
-.card {
-    width: 100%;
-    margin-bottom: 0.938rem;
-}
-
 /*-------------- Sobre ----------------*/
 #sobre {
-    padding: 2rem 15rem;
+    padding: 2rem 8rem;
 }
 
 .sobre-titulo {
@@ -295,7 +281,8 @@ body {
 
 #sobre p {
     text-align: center;
-    font-size: 1.375rem;
+    font-size: 1.2rem;
+    line-height: 1.5;
     font-weight: 300;
     padding: 1rem 5rem;
 }
@@ -327,36 +314,215 @@ body {
 
 /*------------ Login --------------*/
 #login {
-    padding: 8rem 35rem;
+    padding: 2rem 20rem;
 }
 
-.formulario-login {
-    border: 5px solid #306B60;
+.login-container {
+    border: 3px solid #306B60;
+    padding: 2rem 2rem;
     border-radius: 1.25rem;
-    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.login-titulo {
+.login-form h2 {
     font-size: 1.625rem;
     font-weight: 400;
     letter-spacing: 0.1625rem;
     text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.login-form label {
+    color: #306B60;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.2rem;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border: 3px solid #306B60;
+    border-radius: 1rem;
     margin-bottom: 2rem;
 }
 
-.form-group label{
-    color:#306B60;
-    font-weight: 500;
-    margin-bottom: 1rem;
-    font-size: 1.2rem;
-}
-
-.form-control {
-    margin-bottom: 1rem;
-    height: 3rem;
-}
-
-.botoes-login{
-    text-align: center;
+.botoes-login {
+    display: flex;
     justify-content: space-between;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    background-color: #306B60;
+    border: 5px solid #306B60;
+    border-radius: 0.9375rem;
+    padding: 0.7rem;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: white;
+    color: #306B60;
+}
+
+/*---------- Atentende escolha -----------*/
+#atendente-escolha {
+    padding: 2rem 20rem;
+}
+
+.escolha-titulo {
+    font-size: 1.625rem;
+    font-weight: 400;
+    letter-spacing: 0.1625rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.botoes-escolha {
+    border: 3px solid #306B60;
+    border-radius: 1.25rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.botao {
+    margin: 3rem 10rem;
+}
+
+.botao a {
+    text-decoration: none;
+    background-color: #306B60;
+    color: white;
+    border-radius: 1.25rem;
+    padding: 1rem;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border: 0.313rem solid #306B60;
+    transition: 0.2s;
+}
+
+.botao a:hover {
+    background-color: white;
+    color: #306B60;
+}
+
+
+/*---------- Atendente Cadastro ----------*/
+#cadastro {
+    padding: 5rem 15rem;
+}
+
+.cadastro-container {
+    border: 3px solid #306B60;
+    padding: 2rem 2rem;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cadastro-form h2 {
+    font-size: 1.625rem;
+    font-weight: 400;
+    letter-spacing: 0.1625rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.cadastro-form label {
+    color: #306B60;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.2rem;
+}
+
+.cadastro-form input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border: 3px solid #306B60;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+
+/*---------- Atendente Agendamento ----------*/
+#agendamento {
+    padding: 5rem 15rem;
+}
+
+.agendamento-container {
+    border: 3px solid #306B60;
+    padding: 2rem 2rem;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.agendamento-form h2 {
+    font-size: 1.625rem;
+    font-weight: 400;
+    letter-spacing: 0.1625rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.agendamento-form label {
+    color: #306B60;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.2rem;
+}
+
+.agendamento-form input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border: 3px solid #306B60;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+
+/*------------- Tela Imovel -----------*/
+#imovel {
+    padding: 2rem 5rem;
+    flex: 1;
+}
+
+.imovel-container {
+    display: flex;
+}
+
+.dados-imovel {
+    padding: 2rem;
+    flex: 1;
+}
+
+.dados-imovel h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 0.1625rem;
+    margin-bottom: 1rem;
+}
+
+.dados-imovel p{
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.dados-imovel img {
+    margin-right: 1rem;
+    justify-content: center;
+}
+
+.descricao-titulo {
+    margin-top: 2rem;
 }

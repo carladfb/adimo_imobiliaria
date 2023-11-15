@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html lang="en">
 <html lang="pt-br">
 
 <head>
@@ -10,7 +9,7 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Login</title>
+    <title>Cadastro</title>
 </head>
 
 <body>
@@ -30,18 +29,21 @@
     </header>
 
     <main>
-        <!--Login-->
-        <section id="login">
-            <div class="login-container">
-                <form class="login-form" action="#" method="post">
-                    <h2>Login</h2>
+        <!--Cadastro-->
+        <section id="cadastro">
+            <div class="cadastro-container">
+                <form class="cadastro-form" action="#" method="post">
+                    <h2>Cadastro</h2>
+                    <label for="name">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite o nome..." required>
                     <label for="email">E-mail:</label>
-                    <input type="email" id="email" name="email" placeholder="Digite seu email..." required>
-                    <label for="password">Senha:</label>
-                    <input type="password" id="password" name="password" placeholder="Digite sua senha..." required>
-                    <div class="botoes-login">
-                        <a href="carrinho.html"><button type="button">Entrar como Cliente</button></a>
-                        <a href="atendente.html"><button type="button">Entrar como Atendente</button></a>
+                    <input type="email" id="email" name="email" placeholder="Digite o email..." required>
+                    <label for="text">Telefone:</label>
+                    <input type="text" id="telefone" name="telefone" placeholder="Digite o telefone..." required>
+                    <label for="text">CPF:</label>
+                    <input type="text" id="cpf" name="cpf" placeholder="Digite o CPF..." required>
+                    <div class="botao-cadastro">
+                        <a href="#"><button type="button">Cadastrar</button></a>
                     </div>
                 </form>
             </div>
@@ -64,6 +66,15 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var botaoCadastro = document.querySelector("#cadastro button");
+            botaoCadastro.addEventListener("click", function () {
+                alert("Cliente cadastrado com sucesso!");
+            });
+        });
+    </script>
+
 </body>
 
 </html>
